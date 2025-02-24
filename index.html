@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بازی کلیکی</title>
+    <title>بازی کلیکی حرفه‌ای</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game">
-        <h1>بازی کلیکی</h1>
-        <p>سکه‌ها: <span id="coin-count">0</span></p>
-        <p>سطح: <span id="level">1</span></p>
-        <button id="click-btn">کلیک کن</button>
-        <br><br>
-        <button onclick="openPage('boost.html')">صفحه بوست</button>
-        <button onclick="openPage('upgrade.html')">صفحه ارتقاء</button>
+        <div class="header">
+            <h1>بازی کلیکی</h1>
+            <p id="coin-count">سکه‌ها: 0</p>
+            <p id="level">سطح: 1</p>
+        </div>
+
+        <div class="content">
+            <button id="click-btn">کلیک کن</button>
+            <div class="stats">
+                <p>زمان بازی: <span id="game-time">0</span> ثانیه</p>
+                <p>تعداد کلیک‌ها: <span id="click-count">0</span></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button onclick="openPage('boost.html')">صفحه بوست</button>
+            <button onclick="openPage('upgrade.html')">صفحه ارتقاء</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
