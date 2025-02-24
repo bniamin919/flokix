@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Boost Options</h1>
+    <p>Current Level: <span id="level">1</span></p>
+    <p>Coins: <span id="coin-count">0</span></p>
+
+    <!-- Upgrade Button (Single Button for All Levels) -->
+    <button onclick="upgradeLevel()">Upgrade to Next Level</button>
+
+    <!-- Auto Claim Option -->
+    <button onclick="activateAutoClaim(200000)">Activate Auto Claim (200,000 Coins)</button>
+
+    <!-- BoostTime Option -->
+    <button onclick="activateBoostTime(100000)">Activate BoostTime (100,000 Coins)</button>
+
+    <!-- Bottom Menu -->
+    <div class="bottom-menu">
+        <span class="menu-item" onclick="openPage('index.html')">Home</span> |
+        <span class="menu-item" onclick="openPage('rewards.html')">Rewards_Daily</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
