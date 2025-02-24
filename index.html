@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بازی کلیکی حرفه‌ای</title>
+    <title>Click to Collect Coins!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game">
-        <div class="header">
-            <h1>بازی کلیکی</h1>
-            <p id="coin-count">سکه‌ها: 0</p>
-            <p id="level">سطح: 1</p>
-        </div>
+    <h1>Click to Collect Coins!</h1>
+    <p>Coins: <span id="coin-count">0</span></p>
+    <p>Level: <span id="level">1</span></p>
+    <img src="floki.png" alt="Floki" width="100" height="100" id="clickable-image" style="cursor: pointer;">
+    <br>
 
-        <div class="content">
-            <button id="click-btn">کلیک کن</button>
-            <div class="stats">
-                <p>زمان بازی: <span id="game-time">0</span> ثانیه</p>
-                <p>تعداد کلیک‌ها: <span id="click-count">0</span></p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <button onclick="openPage('boost.html')">صفحه بوست</button>
-            <button onclick="openPage('upgrade.html')">صفحه ارتقاء</button>
-        </div>
+    <div class="bottom-menu">
+        <span class="menu-item" onclick="openPage('boost.html')">Boost</span> |
+        <span class="menu-item" onclick="openPage('rewards.html')">Daily Rewards</span> |
+        <span class="menu-item" onclick="openPage('referral.html')">Referral</span>
     </div>
 
     <script src="script.js"></script>
