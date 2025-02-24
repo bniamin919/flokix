@@ -83,3 +83,8 @@ document.getElementById('clickable-image').addEventListener('click', function() 
     document.getElementById('coin-count').textContent = coins; // Update the displayed coin count
     localStorage.setItem('coins', coins); // Save coins to localStorage
 });
+
+// Function to open a new page
+function openPage(pageUrl) {
+    window.location.href = pageUrl;
+}
